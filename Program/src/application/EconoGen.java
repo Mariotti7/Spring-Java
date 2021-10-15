@@ -30,7 +30,7 @@ public class EconoGen {
 
 		if (opcao > 2 || opcao == 0) {
 			System.out.println("Opção inválida, tente novamente!");
-			System.out.print("\n1Deseja iniciar? 1-SIM | 2-NÃO : ");
+			System.out.print("\nDeseja iniciar? 1-SIM | 2-NÃO : ");
 			opcao = sc.nextInt();
 		}
 
