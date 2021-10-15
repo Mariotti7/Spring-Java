@@ -124,6 +124,19 @@ public class EconoGen {
 					System.out.print("\nDeseja continuar? 1-SIM | 2-NÃO : ");
 					opcao = sc.nextInt();
 				}
+				if (objetivo > 4 || objetivo < 1) {
+					System.out.println("Opção inválida, tente novamente!");
+					System.out.print(
+							"Qual seu sonho? 1-CASA PRÓPRIA | 2-CARRO NOVO | 3-VIAGEM DOS SONHOS | 4-APOSENTADORIA : ");
+					objetivo = sc.nextInt();
+					System.out.println();
+					if(objetivo > 4 || objetivo < 1) {
+						System.out.println("Vixi, opção errada novamente!");
+						System.out.println("Volte outra hora para continuar a sonhar conosco!");
+						System.out.println("====== Até Mais ====== ");
+						break;
+					}
+				}
 			} else {
 				System.out.println(
 						"Me desculpe, sei que seus sonhos são importantes, mas você precisa ter pelo menos 18 anos para continuar conosco.");
